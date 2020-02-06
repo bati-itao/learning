@@ -18,7 +18,7 @@
     <!-- Write closure template -->
     <script>
         document.write(wet.builder.refTop({
-            "subTheme": "esdc"
+            "isApplication": true
         }));
     </script>
 </head>
@@ -29,7 +29,7 @@
     <!-- Write closure template -->
     <script>
         var defTop = document.getElementById("def-top");
-        defTop.outerHTML = wet.builder.top({
+        defTop.outerHTML = wet.builder.appTop({
             "subTheme": "esdc",
             "GCToolsModal" : true,
             "breadcrumbs" : [{
@@ -115,7 +115,7 @@
         <script>
             var defPreFooter = document.getElementById("def-preFooter");
             defPreFooter.outerHTML = wet.builder.preFooter({
-                "dateModified": "2019-03-08"
+                "dateModified": "2020-02-06"
             });
         </script>
     </main>
@@ -125,13 +125,15 @@
     <!-- Write closure template -->
     <script>
         var defFooter = document.getElementById("def-footer");
-        defFooter.outerHTML = wet.builder.footer({
+        defFooter.outerHTML = wet.builder.appFooter({
             "showFeatures": false
         });
     </script>
     <!-- Write closure template -->
     <script>
-        document.write(wet.builder.refFooter({}));
+        document.write(wet.builder.refFooter({
+            "isApplication": true
+        }));
     </script>
 </body>
 

@@ -13,12 +13,12 @@
         content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
     <!-- Meta data-->
     <!-- Load closure template scripts -->
-    <script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_32/cdts/compiled/soyutils.js"></script>
-    <script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_32/cdts/compiled/wet-en.js"></script>
+    <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
+    <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-en.js"></script>
     <!-- Write closure template -->
     <script>
         document.write(wet.builder.refTop({
-            "subTheme": "esdc"
+            "isApplication": true
         }));
     </script>
 </head>
@@ -26,46 +26,25 @@
 <body vocab="https://schema.org/" typeof="WebPage">
     <div id="def-top">
     </div>
-    <!-- Write closure template -->
     <script>
         var defTop = document.getElementById("def-top");
-        defTop.outerHTML = wet.builder.top({
-            "subTheme": "esdc",
-            "GCToolsModal" : true,
-            "breadcrumbs" : [{
+        defTop.outerHTML = wet.builder.appTop({
+            "appName": [{
+                "text": "IT Accessibility office",
+                "href": "./index.html"
+            }],
+           "breadcrumbs" : [{
                 "title": "Home",
-                "href" : "http://iservice.prv/eng/index.shtml"
+                "href" : "https://www.canada.ca/en.html"
             },{
                 "title": "ITAO",
                 "acronym" : "IT Accessibility Office",
                 "href" : "./index.html"
             }],
-            "GCToolsModal" : true,
             "lngLinks": [{
                 "lang": "fr",
-                "href": "./index-fr.html",
+                "href": "./_template-fr.html",
                 "text": "Français"
-            }],
-            "intranetTitle": [{
-                "href": "http://esdc.prv/en/index.shtml",
-                "text": " IntraWeb",
-                "boldText" : "ESDC/SC",
-                "acronym": "Employment and Social Development Canada / Service Canada"
-            }],
-            "customSearch": [{
-                "action" : "http://hrsdc.prv/cgi-bin/rhdcc-hrsdc/recherche-search.aspx", // Mandatory
-                "placeholder" : "Search the IntraWeb", // Optional 
-                "method" : "get", // Mandatory "get" or "post"
-                "hiddenInput" : [{
-                    "name" : "k",
-                    "value" : "en"
-                }, {
-                    "name" : "l",
-                    "value" : "eng"
-                }, {
-                    "name" : "chk2",
-                    "value" : "True"
-                }] // Optional
             }]
         });
     </script>
@@ -76,7 +55,7 @@ $CONTENT
         <script>
             var defPreFooter = document.getElementById("def-preFooter");
             defPreFooter.outerHTML = wet.builder.preFooter({
-                "dateModified": "2019-03-08"
+                "dateModified": "2020-02-06"
             });
         </script>
     </main>
@@ -86,13 +65,15 @@ $CONTENT
     <!-- Write closure template -->
     <script>
         var defFooter = document.getElementById("def-footer");
-        defFooter.outerHTML = wet.builder.footer({
+        defFooter.outerHTML = wet.builder.appFooter({
             "showFeatures": false
         });
     </script>
     <!-- Write closure template -->
     <script>
-        document.write(wet.builder.refFooter({}));
+        document.write(wet.builder.refFooter({
+            "isApplication": true
+        }));
     </script>
 </body>
 
