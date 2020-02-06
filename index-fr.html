@@ -14,7 +14,7 @@
     <!-- Meta data-->
     <!-- Load closure template scripts -->
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
-    <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-efr.js"></script>
+    <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-fr.js"></script>
     <!-- Write closure template -->
     <script>
         document.write(wet.builder.refTop({
@@ -30,37 +30,18 @@
     <script>
         var defTop = document.getElementById("def-top");
         defTop.outerHTML = wet.builder.appTop({
-            "subTheme": "esdc",
-            "GCToolsModal" : true,
-            "breadcrumbs" : [{
+            "appName": [{
+                "text": "Bureau de l’accessibilité de la TI",
+                "href": "./index-fr.html"
+            }],
+           "breadcrumbs" : [{
                 "title": "Accueil",
-                "href" : "http://iservice.prv/fra/index.shtml"
+                "href" : "https://www.canada.ca/fr.html"
             }],
             "lngLinks": [{
                 "lang": "en",
-                "href": "./index.html",
+                "href": "./indexn.html",
                 "text": "English"
-            }],
-            "intranetTitle": [{
-                "href": "http://esdc.prv/en/index.shtml",
-                "text": " IntraWeb",
-                "boldText" : "ESDC/SC",
-                "acronym": "Employment and Social Development Canada / Service Canada"
-            }],
-            "customSearch": [{
-                "action" : "http://hrsdc.prv/cgi-bin/rhdcc-hrsdc/recherche-search.aspx", // Mandatory
-                "placeholder" : "Search the IntraWeb", // Optional 
-                "method" : "get", // Mandatory "get" or "post"
-                "hiddenInput" : [{
-                    "name" : "k",
-                    "value" : "fr"
-                }, {
-                    "name" : "l",
-                    "value" : "fra"
-                }, {
-                    "name" : "chk2",
-                    "value" : "True"
-                }] // Optional
             }]
         });
     </script>
