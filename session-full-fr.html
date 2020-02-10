@@ -97,7 +97,9 @@
         <script>
             var defPreFooter = document.getElementById("def-preFooter");
             defPreFooter.outerHTML = wet.builder.preFooter({
-                "dateModified": "2020-02-06"
+                "dateModified": "2020-02-07",
+                "showFeedback" : false,
+                "showShare" : false
             });
         </script>
     </main>
@@ -108,7 +110,6 @@
     <script>
         var defFooter = document.getElementById("def-footer");
         defFooter.outerHTML = wet.builder.appFooter({
-            "showFeatures": false
         });
     </script>
     <!-- Write closure template -->
