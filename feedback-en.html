@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Feedback survey form - Accessibility Coaching Sessions for Developers (Full Day) - IT Accessibility office</title>
+    <title>Feedback survey form - Accessibility Coaching Sessions for Developers - IT Accessibility office</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <!-- Meta data -->
     <meta name="description"
@@ -53,13 +53,11 @@
         <h1 property="name" id="wb-cont">Feedback survey form - Accessibility Coaching Sessions for Developers</h1>
         <section>
             <h2>Directions</h2>
-            <p>Complete the following feedback survey by rating your overall satisfaction or dissatisfaction using a scale between 1 to 10, where 1 is "very dissatisfied" and 10 is "very satisfied".</p>
+            <p>Complete the following feedback survey, print it, using the print button, and send it back to use via <a href="mailto:EDSC.PCA-ACP.ESDC@hrsdc-rhdcc.gc.ca">email</a></p>
+            <p>Please rate your overall satisfaction or dissatisfaction using a scale between 1 to 10, where 1 is "very dissatisfied" and 10 is "very satisfied".</p>
             <p>Please rate your level of knowledge of the subject matter on a scale of 1 to 10, where 1 is “a very low level of knowledge in the subject area” and 10 is “a very high level of knowledge in the subject area.”</p>
             <p>Provide a brief explanation for the score attributed.</p>
-
-
         </section>
-        
 
         <div class="wb-frmvld">
             <form action="#print" id="a11y-survey" method="get">
@@ -86,7 +84,7 @@
                 <fieldset>
                     <legend>Quality of the content</legend>
                     <div class="form-group">
-                        <label class="required" for="q1" class="required"><span class="field-name">Satisfaction <span class="wb-inv">Quality of the content</span></span> <strong class="required">(required)</strong></label>
+                        <label class="required" for="q1"><span class="field-name">Satisfaction <span class="wb-inv">Quality of the content</span></span> <strong class="required">(required)</strong></label>
                         <select class="form-control" id="q1" name="q1" required="required">
                             <option label="Quality of the content"></option>
                             <option value="1">1</option>
@@ -134,19 +132,12 @@
                 <fieldset>
                     <legend>Would you say the instructor or facilitator spent too much time, the right amount of time, or not enough time covering the content of this learning activity?</legend>
                     <div class="form-group">
-                        <label class="required" for="q3"><span class="field-name">Satisfaction <span class="wb-inv">Would you say the instructor or facilitator spent too much time, the right amount of time, or not enough time covering the content of this learning activity?</span></span> <strong class="required">(required)</strong></label>
+                        <label class="required" for="q3"><span class="field-name">Time spent <span class="wb-inv">Would you say the instructor or facilitator spent too much time, the right amount of time, or not enough time covering the content of this learning activity?</span></span> <strong class="required">(required)</strong></label>
                         <select class="form-control" id="q3" name="q3" required="required">
                             <option label="Would you say the instructor or facilitator spent too much time, the right amount of time, or not enough time covering the content of this learning activity?"></option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
+                            <option value="1">too much time</option>
+                            <option value="2">right amount of time</option>
+                            <option value="3">not enough time</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -206,7 +197,7 @@
                 <fieldset>
                     <legend>Would you say your expectations of this coaching session were exceeded, met, or not met?</legend>
                     <div class="form-group">
-                        <label class="required" for="q6"><span class="field-name">Eexpectations <span class="wb-inv">Would you say your expectations of this coaching session were exceeded, met, or not met?</span></span> <strong class="required">(required)</strong></label>
+                        <label class="required" for="q6"><span class="field-name">Expectations <span class="wb-inv">Would you say your expectations of this coaching session were exceeded, met, or not met?</span></span> <strong class="required">(required)</strong></label>
                         <select class="form-control" id="q6" name="q6" required="required">
                             <option label="Would you say your expectations of this coaching session were exceeded, met, or not met?"></option>
                             <option value="1">not met</option>
@@ -226,19 +217,17 @@
                         <label class="required" for="q7"><span class="field-name">Likelihood <span class="wb-inv">Are you likely, somewhat likely, somewhat unlikely, or unlikely to recommend this coaching session to a colleague?</span></span> <strong class="required">(required)</strong></label>
                         <select class="form-control" id="q7" name="q7" required="required">
                             <option label="Are you likely, somewhat likely, somewhat unlikely, or unlikely to recommend this coaching session to a colleague?"></option>
-                            <option value="1">Likely</option>
-                            <option value="2">Somewhat Likely</option>
-                            <option value="3">Somewhat Unlikely</option>
-                            <option value="4">Unlikely</option>
+                            <option value="1">Unlikely</option>
+                            <option value="2">Somewhat Unlikely</option>
+                            <option value="3">Somewhat Likely</option>
+                            <option value="4">Likely</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="q-comment"><span class="field-name">Reason <span class="wb-inv">Are you likely, somewhat likely, somewhat unlikely, or unlikely to recommend this coaching session topan></label>
+                        <label for="q-comment"><span class="field-name">Reason <span class="wb-inv">Are you likely, somewhat likely, somewhat unlikely, or unlikely to recommend this coaching session to a colleague?</span></label>
                         <textarea class="form-control full-width" name="q-comment" id="q-comment"></textarea>
                     </div>
                 </fieldset>
-
-
 
                 <div class="form-group mrgn-tp-lg">
                     <label for="q8"><span class="field-name">Do you have any other comments you would like to share to help the sessions improve?</span></label>
@@ -250,7 +239,6 @@
 
         <p class="mrgn-tp-lg">Thank You for Valuable Feedback</p>
         
-      
         <div id="def-preFooter"></div>
         <script>
             var defPreFooter = document.getElementById("def-preFooter");
@@ -278,10 +266,12 @@
     </script>
     <script>
         $( ".wb-frmvld" ).on( "wb-ready.wb-frmvld", function( event ) {
-            $('form#a11y-survey').submit(function(){
-                window.print();
-                return false;
-            });
+            $('form#a11y-survey').setTimeout(function(){ 
+                submit(function(){
+                    window.print();
+                    return false;
+                });
+            }, 3000);
             $('textarea').each(function () {
                 this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
                 }).on('input', function () {
