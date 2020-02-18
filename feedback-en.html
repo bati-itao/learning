@@ -53,6 +53,9 @@
     </script>
     <main role="main" property="mainContentOfPage" class="container">
         <h1 property="name" id="wb-cont">Feedback survey form - Accessibility coaching series</h1>
+        <div>
+            <p>Note: Submission of this form can only be done on over the <abbr title="Employment and Social Development Canada">ESDC</abbr> network.</p>
+        </div>
         <section>
             <h2>Directions</h2>
             <p>Please rate your overall satisfaction or dissatisfaction using a scale between 1 to 10, where 1 is "very dissatisfied" and 10 is "very satisfied".</p>
@@ -61,11 +64,12 @@
         </section>
 
         <div class="wb-frmvld">
-            <form action="https://mlapesd3963v-s2tst-srv403.intra.dev/cgi-bin/emailform/index.aspx?GoCTemplateCulture=en-CA" id="a11y-survey" method="post">
-                <input name="ID" type="hidden" value="accessibility_coaching" />
-                <input type="hidden" name="ESDCEmailForm" value="Y" /> 
+            <form action="http://esdc.prv/cgi-bin/emailform/index.aspx?GoCTemplateCulture=en-CA" id="a11y-survey" method="get">
+                <!-- <input name="ID" type="hidden" value="accessibility_coaching" /> -->
+                <input name="ID" type="hidden" value="Thompson" />
+                <input type="hidden" name="ESDCEmailForm" value="Y" />
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label class="required" for="date" class="required"><span class="field-name">Date</span> <strong class="required">(required)</strong></label>
                     <input class="form-control" type="date" id="date" name="date" />
                 </div>
@@ -230,7 +234,7 @@
                         <label for="q-comment"><span class="field-name">Reason <span class="wb-inv">Are you likely, somewhat likely, somewhat unlikely, or unlikely to recommend this coaching session to a colleague?</span></label>
                         <textarea class="form-control full-width" name="Are-you-likely-somewhat-likely-somewhat-unlikely-or-unlikely-to-recommend-this-coaching-session-to-a-colleague-comment" id="Are-you-likely-somewhat-likely-somewhat-unlikely-or-unlikely-to-recommend-this-coaching-session-to-a-colleague-comment"></textarea>
                     </div>
-                </fieldset>
+                </fieldset> -->
 
                 <div class="form-group mrgn-tp-lg">
                     <label for="Do-you-have-any-other-comments-you-would-like-to-share-to-help-the-sessions-improve"><span class="field-name">Do you have any other comments you would like to share to help the sessions improve?</span></label>
