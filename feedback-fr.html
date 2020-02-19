@@ -16,11 +16,7 @@
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-fr.js"></script>
     <!-- Write closure template -->
-    <script>
-        document.write(wet.builder.refTop({
-            "isApplication": true
-        }));
-    </script>
+    <script src="./scripts/refTop.min.js"></script>
 </head>
 
 <body vocab="https://schema.org/" typeof="WebPage">
@@ -54,8 +50,8 @@
     </script>
     <main property="mainContentOfPage" class="container">
         <h1 property="name" id="wb-cont">Sondage - Série de séances d’encadrement sur l’accessibilité</h1>
-        <div>
-            <p class="alert alert-info">Remarque : La soumission de ce formulaire ne peut se faire que sur le réseau d'<abbr title="Emploi et Développement social Canada ">EDSC</abbr>.</p>
+        <div class="alert alert-info">
+            <p>Remarque : La soumission de ce formulaire ne peut se faire que sur le réseau d'<abbr title="Emploi et Développement social Canada ">EDSC</abbr>.</p>
         </div>
         <section>
             <h2>Instructions</h2>
@@ -67,8 +63,7 @@
         <div class="wb-frmvld">
             <form action="https://mlapesd3963v-s2tst-srv403.intra.dev/cgi-bin/emailform/index.aspx?GoCTemplateCulture=en-CA" id="a11y-survey" method="get">
                 <input name="ID" type="hidden" value="encadrement_accessibilite" />
-                <input type="hidden" name="ESDCEmailForm" value="Y" /> 
-
+                <input name="ESDCEmailForm" type="hidden" value="Y" />
                 <div class="form-group">
                     <label class="required" for="date" class="required"><span class="field-name">Date</span> <strong class="required">(obligatoire)</strong></label>
                     <input class="form-control" type="date" id="date" name="date" />
@@ -108,7 +103,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Qualité-du-contenu-comment"><span class="field-name">La raison <span class="wb-inv">Qualité du contenu</span></span></label>
-                        <textarea class="form-control full-width" name="Qualité-du-contenu-comment" id="Qualité-du-contenu-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Qualité-du-contenu-comment" id="Qualité-du-contenu-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -132,7 +127,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Connaissance-du-sujet-par-linstructeur-ou-lanimateur-comment"><span class="field-name">La raison <span class="wb-inv">Connaissance du sujet par l'instructeur ou l'animateur</span></span></label>
-                        <textarea class="form-control full-width" name="Connaissance-du-sujet-par-linstructeur-ou-lanimateur-comment" id="Connaissance-du-sujet-par-linstructeur-ou-lanimateur-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Connaissance-du-sujet-par-linstructeur-ou-lanimateur-comment" id="Connaissance-du-sujet-par-linstructeur-ou-lanimateur-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -149,7 +144,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Diriez-vous-que-linstructeur-ou-lanimateur-a-passé-trop-de-temps-la-bonne-quantité-de-temps-ou-pas-assez-de-temps-à-couvrir-le-contenu-de-cette-activité-dapprentissage-comment"><span class="field-name">La raison <span class="wb-inv">Diriez-vous que l'instructeur ou l'animateur a passé trop de temps, la bonne quantité de temps, ou pas assez de temps à couvrir le contenu de cette activité d'apprentissage ?</span></span></label>
-                        <textarea class="form-control full-width" name="Diriez-vous-que-linstructeur-ou-lanimateur-a-passé-trop-de-temps-la-bonne-quantité-de-temps-ou-pas-assez-de-temps-à-couvrir-le-contenu-de-cette-activité-dapprentissage-comment" id="Diriez-vous-que-linstructeur-ou-lanimateur-a-passé-trop-de-temps-la-bonne-quantité-de-temps-ou-pas-assez-de-temps-à-couvrir-le-contenu-de-cette-activité-dapprentissage-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Diriez-vous-que-linstructeur-ou-lanimateur-a-passé-trop-de-temps-la-bonne-quantité-de-temps-ou-pas-assez-de-temps-à-couvrir-le-contenu-de-cette-activité-dapprentissage-comment" id="Diriez-vous-que-linstructeur-ou-lanimateur-a-passé-trop-de-temps-la-bonne-quantité-de-temps-ou-pas-assez-de-temps-à-couvrir-le-contenu-de-cette-activité-dapprentissage-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -173,7 +168,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Avant-cette-activité-dapprentissage-comment"><span class="field-name">La raison <span class="wb-inv">Avant cette activité d'apprentissage</span></span></label>
-                        <textarea class="form-control full-width" name="Avant-cette-activité-dapprentissage-comment" id="Avant-cette-activité-dapprentissage-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Avant-cette-activité-dapprentissage-comment" id="Avant-cette-activité-dapprentissage-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -197,7 +192,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Après-cette-activité-dapprentissage-comment"><span class="field-name">La raison <span class="wb-inv">Après cette activité d'apprentissage</span></span></label>
-                        <textarea class="form-control full-width" name="Après-cette-activité-dapprentissage-comment" id="Après-cette-activité-dapprentissage-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Après-cette-activité-dapprentissage-comment" id="Après-cette-activité-dapprentissage-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -221,7 +216,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Veuillez-évaluer-si-vos-attentes-concernant-cette-session-ont-été-satisfaites-sur-une-échelle-de-1-à-10-où-1-correspond-à-non-satisfait-et-10-à-dépassé-comment"><span class="field-name">La raison <span class="wb-inv">Veuillez évaluer si vos attentes concernant cette session ont été satisfaites sur une échelle de 1 à 10, où 1 correspond à non satisfait et 10 à dépassé.</span></span></label>
-                        <textarea class="form-control full-width" name="Veuillez-évaluer-si-vos-attentes-concernant-cette-session-ont-été-satisfaites-sur-une-échelle-de-1-à-10-où-1-correspond-à-non-satisfait-et-10-à-dépassé-comment" id="Veuillez-évaluer-si-vos-attentes-concernant-cette-session-ont-été-satisfaites-sur-une-échelle-de-1-à-10-où-1-correspond-à-non-satisfait-et-10-à-dépassé-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Veuillez-évaluer-si-vos-attentes-concernant-cette-session-ont-été-satisfaites-sur-une-échelle-de-1-à-10-où-1-correspond-à-non-satisfait-et-10-à-dépassé-comment" id="Veuillez-évaluer-si-vos-attentes-concernant-cette-session-ont-été-satisfaites-sur-une-échelle-de-1-à-10-où-1-correspond-à-non-satisfait-et-10-à-dépassé-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -239,54 +234,24 @@
                     </div>
                     <div class="form-group">
                         <label for="Est-il-probable-plutôt-probable-peu-probable-ou-improbable-que-vous-recommandiez-cette-session-de-coaching-à-un-collègue-comment"><span class="field-name">La raison <span class="wb-inv">Est-il probable, plutôt probable, peu probable ou improbable que vous recommandiez cette session de coaching à un collègue ?</span></label>
-                        <textarea class="form-control full-width" name="Est-il-probable-plutôt-probable-peu-probable-ou-improbable-que-vous-recommandiez-cette-session-de-coaching-à-un-collègue-comment" id="Est-il-probable-plutôt-probable-peu-probable-ou-improbable-que-vous-recommandiez-cette-session-de-coaching-à-un-collègue-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Est-il-probable-plutôt-probable-peu-probable-ou-improbable-que-vous-recommandiez-cette-session-de-coaching-à-un-collègue-comment" id="Est-il-probable-plutôt-probable-peu-probable-ou-improbable-que-vous-recommandiez-cette-session-de-coaching-à-un-collègue-comment"></textarea>
                     </div>
                 </fieldset>
 
                 <div class="form-group mrgn-tp-lg">
                     <label for="Avez-vous-dautres-commentaires-que-vous-aimeriez-partager-pour-aider-à-améliorer-ces-sessions"><span class="field-name">Avez-vous d'autres commentaires que vous aimeriez partager pour aider à améliorer ces sessions ?</span></label>
-                    <textarea class="form-control full-width" name="Avez-vous-dautres-commentaires-que-vous-aimeriez-partager-pour-aider-à-améliorer-ces-sessions" id="Avez-vous-dautres-commentaires-que-vous-aimeriez-partager-pour-aider-à-améliorer-ces-sessions"></textarea>
+                    <textarea class="form-control full-width expand" name="Avez-vous-dautres-commentaires-que-vous-aimeriez-partager-pour-aider-à-améliorer-ces-sessions" id="Avez-vous-dautres-commentaires-que-vous-aimeriez-partager-pour-aider-à-améliorer-ces-sessions"></textarea>
                 </div>
                 <input type="submit" value="Envoyer" class="printPage btn btn-primary btn-lg" />
             </form>
         </div>
-
-        
-    <div id="def-preFooter"></div>
-        <script>
-            var defPreFooter = document.getElementById("def-preFooter");
-            defPreFooter.outerHTML = wet.builder.preFooter({
-                "dateModified": "2020-02-07",
-                "showFeedback" : false,
-                "showShare" : false
-            });
-        </script>
+        <div id="def-preFooter"></div>
+        <script src="./scripts/preFooter.min.js"></script>
     </main>
-    
-    <div id="def-footer">
-    </div>
-    <!-- Write closure template -->
-    <script>
-        var defFooter = document.getElementById("def-footer");
-        defFooter.outerHTML = wet.builder.appFooter({
-        });
-    </script>
-    <!-- Write closure template -->
-    <script>
-        document.write(wet.builder.refFooter({
-            "isApplication": true
-        }));
-    </script>
-    <script>
-        $( ".wb-frmvld" ).on( "wb-ready.wb-frmvld", function( event ) {
-            $('textarea').each(function () {
-                this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-                }).on('input', function () {
-                this.style.height = 'auto';
-                this.style.height = (this.scrollHeight) + 'px';
-            });
-        });
-    </script>
+    <div id="def-footer"></div>
+    <script src="./scripts/appFooter.min.js"></script>
+    <script src="./scripts/refFooter.min.js"></script>
+    <script src="./scripts/bati-itao.min.js"></script>
 </body>
-
+    
 </html>

@@ -16,11 +16,7 @@
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-en.js"></script>
     <!-- Write closure template -->
-    <script>
-        document.write(wet.builder.refTop({
-            "isApplication": true
-        }));
-    </script>
+    <script src="./scripts/refTop.min.js"></script>
 </head>
 
 <body vocab="https://schema.org/" typeof="WebPage">
@@ -67,8 +63,7 @@
             <form action="http://esdc.prv/cgi-bin/emailform/index.aspx?GoCTemplateCulture=en-CA" id="a11y-survey" method="post">
                 <!-- <input name="ID" type="hidden" value="accessibility_coaching" /> -->
                 <input name="ID" type="hidden" value="Thompson" />
-                <input type="hidden" name="ESDCEmailForm" value="Y" />
-
+                <input name="ESDCEmailForm" type="hidden" value="Y" />
                 <!-- <div class="form-group">
                     <label class="required" for="date" class="required"><span class="field-name">Date</span> <strong class="required">(required)</strong></label>
                     <input class="form-control" type="date" id="date" name="date" />
@@ -108,7 +103,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Quality-of-the-content-comment"><span class="field-name">Reason <span class="wb-inv">Quality of the content</span></span></label>
-                        <textarea class="form-control full-width" name="Quality-of-the-content-comment" id="Quality-of-the-content-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Quality-of-the-content-comment" id="Quality-of-the-content-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -132,7 +127,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Subject-matter-knowledge-of-the-instructor-or-facilitator-comment"><span class="field-name">Reason <span class="wb-inv">Subject matter knowledge of the instructor or facilitator</span></span></label>
-                        <textarea class="form-control full-width" name="Subject-matter-knowledge-of-the-instructor-or-facilitator-comment" id="Subject-matter-knowledge-of-the-instructor-or-facilitator-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Subject-matter-knowledge-of-the-instructor-or-facilitator-comment" id="Subject-matter-knowledge-of-the-instructor-or-facilitator-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -149,7 +144,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Would-you-say-the-instructor-or-facilitator-spent-too-much-time-the-right-amount-of-time-or-not-enough-time-covering-the-content-of-this-learning-activity-comment"><span class="field-name">Reason <span class="wb-inv">Would you say the instructor or facilitator spent too much time, the right amount of time, or not enoughcontent of this learning activity?</span></span></label>
-                        <textarea class="form-control full-width" name="Would-you-say-the-instructor-or-facilitator-spent-too-much-time-the-right-amount-of-time-or-not-enough-time-covering-the-content-of-this-learning-activity-comment" id="Would-you-say-the-instructor-or-facilitator-spent-too-much-time-the-right-amount-of-time-or-not-enough-time-covering-the-content-of-this-learning-activity-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Would-you-say-the-instructor-or-facilitator-spent-too-much-time-the-right-amount-of-time-or-not-enough-time-covering-the-content-of-this-learning-activity-comment" id="Would-you-say-the-instructor-or-facilitator-spent-too-much-time-the-right-amount-of-time-or-not-enough-time-covering-the-content-of-this-learning-activity-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -173,7 +168,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Before-this-learning-activity-comment"><span class="field-name">Reason <span class="wb-inv">Before this learning activity</span></span></label>
-                        <textarea class="form-control full-width" name="Before-this-learning-activity-comment" id="Before-this-learning-activity-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Before-this-learning-activity-comment" id="Before-this-learning-activity-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -197,7 +192,7 @@
                     </div>
                     <div class="form-group">
                         <label for="After-this-learning-activity-comment"><span class="field-name">Reason <span class="wb-inv">After this learning activity</span></span></label>
-                        <textarea class="form-control full-width" name="After-this-learning-activity-comment" id="After-this-learning-activity-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="After-this-learning-activity-comment" id="After-this-learning-activity-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -214,7 +209,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Would-you-say-your-expectations-of-this-coaching-session-were-exceeded-met-or-not-met-comment"><span class="field-name">Reason <span class="wb-inv">Would you say your expectations of this coaching session were exceeded, met, or not met?</span></span></label>
-                        <textarea class="form-control full-width" name="Would-you-say-your-expectations-of-this-coaching-session-were-exceeded-met-or-not-met-comment" id="Would-you-say-your-expectations-of-this-coaching-session-were-exceeded-met-or-not-met-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Would-you-say-your-expectations-of-this-coaching-session-were-exceeded-met-or-not-met-comment" id="Would-you-say-your-expectations-of-this-coaching-session-were-exceeded-met-or-not-met-comment"></textarea>
                     </div>
                 </fieldset>
 
@@ -232,54 +227,25 @@
                     </div>
                     <div class="form-group">
                         <label for="q-comment"><span class="field-name">Reason <span class="wb-inv">Are you likely, somewhat likely, somewhat unlikely, or unlikely to recommend this coaching session to a colleague?</span></label>
-                        <textarea class="form-control full-width" name="Are-you-likely-somewhat-likely-somewhat-unlikely-or-unlikely-to-recommend-this-coaching-session-to-a-colleague-comment" id="Are-you-likely-somewhat-likely-somewhat-unlikely-or-unlikely-to-recommend-this-coaching-session-to-a-colleague-comment"></textarea>
+                        <textarea class="form-control full-width expand" name="Are-you-likely-somewhat-likely-somewhat-unlikely-or-unlikely-to-recommend-this-coaching-session-to-a-colleague-comment" id="Are-you-likely-somewhat-likely-somewhat-unlikely-or-unlikely-to-recommend-this-coaching-session-to-a-colleague-comment"></textarea>
                     </div>
                 </fieldset> -->
 
                 <div class="form-group mrgn-tp-lg">
                     <label for="Do-you-have-any-other-comments-you-would-like-to-share-to-help-the-sessions-improve"><span class="field-name">Do you have any other comments you would like to share to help the sessions improve?</span></label>
-                    <textarea class="form-control full-width" name="Do-you-have-any-other-comments-you-would-like-to-share-to-help-the-sessions-improve" id="Do-you-have-any-other-comments-you-would-like-to-share-to-help-the-sessions-improve"></textarea>
+                    <textarea class="form-control full-width expand" name="Do-you-have-any-other-comments-you-would-like-to-share-to-help-the-sessions-improve" id="Do-you-have-any-other-comments-you-would-like-to-share-to-help-the-sessions-improve"></textarea>
                 </div>
                 <input type="submit" value="Send" class="printPage btn btn-primary btn-lg" />
             </form>
         </div>
 
-        
         <div id="def-preFooter"></div>
-        <script>
-            var defPreFooter = document.getElementById("def-preFooter");
-            defPreFooter.outerHTML = wet.builder.preFooter({
-                "dateModified": "2020-02-07",
-                "showFeedback" : false,
-                "showShare" : false
-            });
-        </script>
+        <script src="./scripts/preFooter.min.js"></script>
     </main>
-    
-    <div id="def-footer">
-    </div>
-    <!-- Write closure template -->
-    <script>
-        var defFooter = document.getElementById("def-footer");
-        defFooter.outerHTML = wet.builder.appFooter({
-        });
-    </script>
-    <!-- Write closure template -->
-    <script>
-        document.write(wet.builder.refFooter({
-            "isApplication": true
-        }));
-    </script>
-    <script>
-        $( ".wb-frmvld" ).on( "wb-ready.wb-frmvld", function( event ) {
-            $('textarea').each(function () {
-                this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-                }).on('input', function () {
-                this.style.height = 'auto';
-                this.style.height = (this.scrollHeight) + 'px';
-            });
-        });
-    </script>
+    <div id="def-footer"></div>
+    <script src="./scripts/appFooter.min.js"></script>
+    <script src="./scripts/refFooter.min.js"></script>
+    <script src="./scripts/bati-itao.min.js"></script>
 </body>
-
+    
 </html>
