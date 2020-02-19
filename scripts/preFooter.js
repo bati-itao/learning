@@ -1,4 +1,5 @@
 // Gets the date modified and creates a `date` object
+// Referenced from https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/
 const modified = new Date(document.lastModified);
 
 // Gets the year from the `date` object
