@@ -16,11 +16,7 @@
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/soyutils.js"></script>
     <script src="https://ssl-templates.services.gc.ca/rn/cls/wet/gcweb/cdts/compiled/wet-fr.js"></script>
     <!-- Write closure template -->
-    <script>
-        document.write(wet.builder.refTop({
-            "isApplication": true
-        }));
-    </script>
+    <script src="./scripts/refTop.min.js"></script>
 </head>
 
 <body vocab="https://schema.org/" typeof="WebPage">
@@ -52,31 +48,13 @@
     <main role="main" property="mainContentOfPage" class="container">
         <h1 property="name" id="wb-cont">HEADING</h1>
 CONTENT
-    <div id="def-preFooter"></div>
-        <script>
-            var defPreFooter = document.getElementById("def-preFooter");
-            defPreFooter.outerHTML = wet.builder.preFooter({
-                "dateModified": "2020-02-07",
-                "showFeedback" : false,
-                "showShare" : false
-            });
-        </script>
-    </main>
-    
-    <div id="def-footer">
-    </div>
-    <!-- Write closure template -->
-    <script>
-        var defFooter = document.getElementById("def-footer");
-        defFooter.outerHTML = wet.builder.appFooter({
-        });
-    </script>
-    <!-- Write closure template -->
-    <script>
-        document.write(wet.builder.refFooter({
-            "isApplication": true
-        }));
-    </script>
+<div id="def-preFooter"></div>
+<script src="./scripts/preFooter.min.js"></script>
+</main>
+<div id="def-footer"></div>
+<script src="./scripts/appFooter.min.js"></script>
+<script src="./scripts/refFooter.min.js"></script>
+<script src="./scripts/bati-itao.min.js"></script>
 </body>
 
 </html>
