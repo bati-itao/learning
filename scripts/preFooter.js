@@ -6,7 +6,7 @@ const modified = new Date(document.lastModified);
 const year = modified.getFullYear()
 
 // Gets the day from the `date` object
-const date = modified.getDate()
+const date = modified.getDate() < 10 ? '0' + modified.getDate() : modified.getDate()
 
 // Use `getMonth` to get the zero-indexed month from the `date` object.
 const monthIndex = modified.getMonth()
