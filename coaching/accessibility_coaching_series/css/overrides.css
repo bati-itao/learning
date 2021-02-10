@@ -30,10 +30,25 @@
     color: cyan;
 }
 
+/* Custom Styles - Eric */
 .stand-out{
     color: #e7ad52;
 }
 
 .smaller{
     width: 50%;
+}
+
+.slide-9::after{
+    content: "";
+    background-image: url('../img/sky-background.jfif');
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
