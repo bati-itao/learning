@@ -62,5 +62,10 @@
 
 .slide-13::after{
     background-image: url('../img/motor.jfif');
+    top: -70vh;
+}
+
+.slide-18::after{
+    background-image: url('../img/keyboard.jpg');
 }
 
