@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[448],{gnaW:function(e,t,n){"use strict";n.d(t,"a",(function(){return s}));var a=n("DZdY"),_=n("630U"),i=n("Q2JV"),o=Object(i.compose)(_.G,_.f,_.B),s=Object(a.a)("span",{target:"e12hk9xy0",label:"Text"})(o,"");s.defaultProps={fontSize:16,margin:0,fontFamily:"base",fontWeight:"base",lineHeight:"base"}}}]);
+//# sourceMappingURL=448.c6905a9ed1dc66307dc8.chunk.js.map

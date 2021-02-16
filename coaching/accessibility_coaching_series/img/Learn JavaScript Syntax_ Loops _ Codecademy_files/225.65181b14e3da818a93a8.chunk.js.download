@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[225],{CZ1f:function(t,n,e){"use strict";e.r(n),e.d(n,"WebBrowser",(function(){return a}));var r=e("fw5G"),_=e.n(r),o=e("bQRv");const loadedURL=(t,n=1)=>{const e=new _.a(t);return o.a.state.history.filter((t=>t.displayUrl.path()===e.path())).length>=n},a={loadedURL:loadedURL,loadedOneOf:(t,n)=>{for(let e=0;e<t.length;e+=1)if(loadedURL(t[e],n))return!0}}}}]);
+//# sourceMappingURL=225.65181b14e3da818a93a8.chunk.js.map

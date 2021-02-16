@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[629],{yc2H:function(n,e,t){"use strict";t.d(e,"a",(function(){return AdImpression}));var a=t("ODXe"),_=t("q1tI"),c=t.n(_),o=t("aqT/"),r=t.n(o),i=t("z9go");const AdImpression=({children:n,payload:e})=>{const t=Object(_.useState)(!1),o=Object(a.a)(t,2),s=o[0],O=o[1];return c.a.createElement(r.a,{onChange:n=>{n&&!s&&(Object(i.b)("ad","impression",e),O(!0))}},n)}}}]);
+//# sourceMappingURL=629.8c654a2c6a9d53253a2d.chunk.js.map

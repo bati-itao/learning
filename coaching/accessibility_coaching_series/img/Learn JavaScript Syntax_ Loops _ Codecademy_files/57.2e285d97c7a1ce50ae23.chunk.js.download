@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[57],{pCWb:function(n,_,a){"use strict";_.a=(n,_,a,e)=>{n.languages.register({id:_}),n.languages.setLanguageConfiguration(_,a),n.languages.setMonarchTokensProvider(_,e)}}}]);
+//# sourceMappingURL=57.2e285d97c7a1ce50ae23.chunk.js.map
